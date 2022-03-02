@@ -1,0 +1,157 @@
+:root {
+  --accent: #d8bfd8;
+  --accent-light: #e4d4e4;
+  --darkslategray: #2f4f4f;
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: var(--darkslategray);
+}
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.section {
+  padding: 60px 0;
+}
+.container {
+  width: 1440px;
+  margin: o auto;
+  padding: o 15px;
+  /* border: 1px solid black; */
+}
+.header {
+  background-color: var(--accent);
+}
+.header a {
+  color: var(--darkslategray);
+  text-decoration: none;
+}
+.header-nav {
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  display: inline-block;
+  width: 20%;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0 75px;
+}
+/* .header-logo img {
+  width: 100%;
+  height: 70px;
+  object-fit: contain;
+} */
+.header-menu {
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: o;
+  padding: o;
+  list-style: none;
+}
+
+/* .clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+  (clear-fix is in header-menu in HTML) 
+} */
+/* .header-menu-item {
+  float: left;
+} */
+
+.header-menu-link {
+  padding: 15px 10px;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-size: 20px;
+  transition: background-color 1s;
+}
+.header-menu-link:hover {
+  background-color: var(--accent-light);
+}
+.intro {
+  padding: 60px 0;
+}
+.intro-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 35px; */
+}
+.intro-left {
+  width: 20%;
+}
+.intro-right {
+  width: 50%;
+  padding: 55px 0;
+}
+.intro-img {
+  width: 200px;
+  border-radius: 90%;
+}
+.intro-right h1 {
+  margin: 0 0 15px;
+}
+
+.contacts ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+}
+.skills {
+  background-color: var(--accent);
+}
+.skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 0 10px 20px 0;
+  list-style: none;
+}
+.skills li {
+  padding: 0 25px;
+  background-color: var(--accent-light);
+  border-radius: 5px;
+}
+.code-example {
+  text-align: center;
+}
+.code-example p {
+  font-style: italic;
+}
+.code-example b {
+  font-style: normal;
+}
+.code-example pre {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  color: var(--darkslategray);
+  background-color: var(--accent);
+  font-size: 1em;
+  border-radius: 5px;
+}
