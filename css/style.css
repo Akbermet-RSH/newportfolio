@@ -16,7 +16,28 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   color: var(--darkslategray);
+  background: rgb(252, 255, 244); /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(252, 255, 244, 1) 0%,
+    rgba(252, 255, 244, 1) 39%,
+    rgba(233, 233, 206, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(252, 255, 244, 1) 0%,
+    rgba(252, 255, 244, 1) 39%,
+    rgba(233, 233, 206, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    rgba(252, 255, 244, 1) 0%,
+    rgba(252, 255, 244, 1) 39%,
+    rgba(233, 233, 206, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#e9e9ce',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 .section-title {
   text-transform: uppercase;
   text-align: center;
@@ -120,6 +141,7 @@ body {
   padding: 0;
   list-style: none;
 }
+
 .skills {
   background-color: var(--accent);
   padding: 15px 0;
@@ -161,20 +183,46 @@ body {
   padding: 15px 0;
 }
 .portfolio ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 25px;
   margin: 0;
+  padding: 15px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 .portfolio li {
   background-color: var(--accent-light);
-  padding: 10px 45px;
+  padding-bottom: 10px;
   border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+.portfolio img {
+  width: 100%;
+  height: 250px;
+}
+
+.portfolio ul a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: var(--accent);
+  text-decoration: none;
+  border-radius: 5px;
+  /* color: var(--darkslategray); */
+  transform: all 0.3s;
+}
+.portfolio ul a:hover {
+  background-color: lightgrey;
 }
 .languages ul {
   margin-left: 600px;
+}
+.languages li {
+  font-size: 20px;
+  margin: 0 0 15px 0;
+  background: url(/images/iconmonstr-check-mark-9.svg) left no-repeat;
+  padding-left: 30px;
+  list-style: none;
 }
 .education {
   background-color: var(--accent);
